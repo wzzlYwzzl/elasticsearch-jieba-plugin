@@ -17,6 +17,7 @@ targetCompatibility = "1.8"
 [compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
 
 repositories {
+    mavenLocal()
     maven { url "http://maven.aliyun.com/nexus/content/groups/public/" }
     jcenter()
 }
@@ -53,10 +54,11 @@ configurations {
 }
 
 dependencies {
-    compile 'com.huaban:jieba-analysis:1.0.2'
+    compile 'com.cnlp:jieba-java:1.0.0'
     compile 'org.elasticsearch:elasticsearch:7.3.0'
     compile 'org.apache.logging.log4j:log4j-api:2.7'
     compile 'org.apache.logging.log4j:log4j-core:2.7'
+    compile fileTree(dir:'libs',include:['*.jar'])
     testCompile 'junit:junit:4.12'
 }
 

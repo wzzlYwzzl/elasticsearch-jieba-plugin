@@ -1,7 +1,7 @@
 package org.elasticsearch.index.analysis;
 
-import com.huaban.analysis.jieba.JiebaSegmenter;
-import com.huaban.analysis.jieba.WordDictionary;
+import com.cnlp.analysis.jieba.JiebaSegmenter;
+import com.cnlp.analysis.jieba.WordDictionary;
 import org.apache.lucene.analysis.Tokenizer;
 import org.elasticsearch.common.settings.Settings;
 import org.elasticsearch.env.Environment;

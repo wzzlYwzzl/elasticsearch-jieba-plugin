@@ -1,6 +1,6 @@
 package org.elasticsearch.index.analysis;
 
-import com.huaban.analysis.jieba.JiebaSegmenter;
+import com.cnlp.analysis.jieba.JiebaSegmenter;
 import org.apache.lucene.analysis.Analyzer;
 
 /**

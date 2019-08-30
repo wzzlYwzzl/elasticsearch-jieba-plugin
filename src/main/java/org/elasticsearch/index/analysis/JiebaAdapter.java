@@ -5,9 +5,9 @@ import java.io.Reader;
 import java.util.Iterator;
 import java.util.List;
 
-import com.huaban.analysis.jieba.JiebaSegmenter;
-import com.huaban.analysis.jieba.JiebaSegmenter.SegMode;
-import com.huaban.analysis.jieba.SegToken;
+import com.cnlp.analysis.jieba.JiebaSegmenter;
+import com.cnlp.analysis.jieba.JiebaSegmenter.SegMode;
+import com.cnlp.analysis.jieba.SegToken;
 
 public class JiebaAdapter implements Iterator<SegToken> {
 

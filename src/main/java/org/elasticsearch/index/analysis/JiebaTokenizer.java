@@ -4,7 +4,7 @@ package org.elasticsearch.index.analysis;
  * Created by zhangcheng on 2017/1/17.
  */
 
-import com.huaban.analysis.jieba.SegToken;
+import com.cnlp.analysis.jieba.SegToken;
 import org.apache.lucene.analysis.Tokenizer;
 import org.apache.lucene.analysis.tokenattributes.CharTermAttribute;
 import org.apache.lucene.analysis.tokenattributes.OffsetAttribute;
