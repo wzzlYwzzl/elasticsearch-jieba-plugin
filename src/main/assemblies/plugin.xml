@@ -35,7 +35,7 @@
             <useProjectArtifact>true</useProjectArtifact>
             <useTransitiveFiltering>true</useTransitiveFiltering>
             <includes>
-                <include>com.huaban:jieba-analysis</include>
+                <include>com.cnlp:jieba-java</include>
             </includes>
         </dependencySet>
     </dependencySets>
