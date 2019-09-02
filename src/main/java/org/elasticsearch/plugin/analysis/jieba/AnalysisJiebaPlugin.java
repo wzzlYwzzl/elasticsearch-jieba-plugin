@@ -25,6 +25,7 @@ public class AnalysisJiebaPlugin extends Plugin implements AnalysisPlugin {
 
     extra.put("jieba_search", JiebaTokenizerFactory::getJiebaSearchTokenizerFactory);
     extra.put("jieba_index", JiebaTokenizerFactory::getJiebaIndexTokenizerFactory);
+    extra.put("jieba_index_all", JiebaTokenizerFactory::getJiebaIndexAllTokenizerFactory);
 
     return extra;
   }
@@ -35,6 +36,7 @@ public class AnalysisJiebaPlugin extends Plugin implements AnalysisPlugin {
 
     extra.put("jieba_search", JiebaAnalyzerProvider::getJiebaSearchAnalyzerProvider);
     extra.put("jieba_index", JiebaAnalyzerProvider::getJiebaIndexAnalyzerProvider);
+    extra.put("jieba_index_all", JiebaAnalyzerProvider::getJiebaIndexAllAnalyzerProvider);
 
     return extra;
   }

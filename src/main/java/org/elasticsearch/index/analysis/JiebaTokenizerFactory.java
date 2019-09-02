@@ -51,4 +51,15 @@ public class JiebaTokenizerFactory extends AbstractTokenizerFactory {
     jiebaTokenizerFactory.setSegMode(JiebaSegmenter.SegMode.INDEX.name());
     return jiebaTokenizerFactory;
   }
+
+  public static TokenizerFactory getJiebaIndexAllTokenizerFactory(IndexSettings indexSettings,
+                                                               Environment environment,
+                                                               String s,
+                                                               Settings settings) {
+    JiebaTokenizerFactory jiebaTokenizerFactory = new JiebaTokenizerFactory(indexSettings,
+        environment,
+        settings);
+    jiebaTokenizerFactory.setSegMode(JiebaSegmenter.SegMode.INDEX_ALL.name());
+    return jiebaTokenizerFactory;
+  }
 }

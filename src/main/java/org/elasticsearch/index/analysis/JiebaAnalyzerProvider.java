@@ -58,4 +58,17 @@ public class JiebaAnalyzerProvider extends AbstractIndexAnalyzerProvider<JiebaAn
 
     return jiebaAnalyzerProvider;
   }
+
+  public static AnalyzerProvider<? extends Analyzer> getJiebaIndexAllAnalyzerProvider(IndexSettings indexSettings,
+                                                                                   Environment environment,
+                                                                                   String s,
+                                                                                   Settings settings) {
+    JiebaAnalyzerProvider jiebaAnalyzerProvider = new JiebaAnalyzerProvider(indexSettings,
+        environment,
+        s,
+        settings,
+        JiebaSegmenter.SegMode.INDEX_ALL);
+
+    return jiebaAnalyzerProvider;
+  }
 }

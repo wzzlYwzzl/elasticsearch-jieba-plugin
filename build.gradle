@@ -58,7 +58,6 @@ dependencies {
     compile 'org.elasticsearch:elasticsearch:7.3.1'
     compile 'org.apache.logging.log4j:log4j-api:2.7'
     compile 'org.apache.logging.log4j:log4j-core:2.7'
-    compile fileTree(dir:'libs',include:['*.jar'])
     testCompile 'junit:junit:4.12'
 }
 
